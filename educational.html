@@ -1,0 +1,241 @@
+<!--This is page of Nereida-->
+<!DOCTYPE html>
+<html>
+<!--Languages used CSS, HTML, JavaScript-->
+<!--The header starts here-->
+
+<head>
+  <!--This is the title called "Education"-->
+  <title>Education</title>
+  <!-- Favicon for the webpage -->
+  <link rel="icon" type="image/x-icon" href="images/favicons (2).ico">
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  <!--This connects to the style sheet-->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!--The style starts here using CSS-->
+  <style>
+    /*This is the style for the body*/
+    body {
+      background-color: #F2E1C3;
+      opacity: 0.7;
+
+    }
+
+    /* Importing the 'Poppins' font from Google Fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+    /* Global styling */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .destination img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* CSS styles for the main section */
+    section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: #F2E1C3;
+      opacity: 0.7;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* CSS styles for text within the section */
+    section p {
+      color: black;
+    }
+
+    /* CSS styles for animated set div */
+    section .set {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+    }
+
+    /* Animation styles for individual divs within set */
+    section .set div {
+      position: absolute;
+      display: block;
+      width: 100px;
+      height: 100px;
+      background-color: transparent;
+      border-radius: 50%;
+    }
+
+    section .set div:nth-child(1) {
+      left: 20%;
+      animation: animate 15s linear infinite;
+      animation-delay: -7s;
+    }
+
+    section .set div:nth-child(2) {
+      left: 50%;
+      animation: animate 20s linear infinite;
+      animation-delay: -5s;
+    }
+
+    section .set div:nth-child(3) {
+      left: 70%;
+      animation: animate 20s linear infinite;
+      animation-delay: 0s;
+    }
+
+    section .set div:nth-child(4) {
+      left: 0%;
+      animation: animate 15s linear infinite;
+      animation-delay: -5s;
+    }
+
+    section .set div:nth-child(5) {
+      left: 85%;
+      animation: animate 18s linear infinite;
+      animation-delay: -10s;
+    }
+
+    section .set div:nth-child(6) {
+      left: 0%;
+      animation: animate 12s linear infinite;
+    }
+
+    section .set div:nth-child(7) {
+      left: 15%;
+      animation: animate 14s linear infinite;
+    }
+
+    section .set div:nth-child(8) {
+      left: 60%;
+      animation: animate 15s linear infinite;
+    }
+
+    /* Keyframes animation for the leaves */
+    @keyframes animate {
+      0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      20% {
+        transform: translateX(-20px) rotate(45deg);
+      }
+
+      40% {
+        transform: translateX(-20px) rotate(90deg);
+      }
+
+      60% {
+        transform: translateX(20px) rotate(180deg);
+      }
+
+      80% {
+        transform: translateX(-20px) rotate(180deg);
+      }
+
+      100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+      }
+    }
+     /*Style ends here*/
+  </style>
+</head>
+<!--End of header here-->
+<!--The body starts here-->
+
+<body>
+  <!--This is the title that appears on the top middle of the page-->
+  <script src="script.js"></script>
+  
+  <!-- This is the navigation bar/menu section -->
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href="history_page.html">History</a>
+    <a href="science_page.html">Science</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+  <!--End of navigation bar/menu section-->
+
+  <!--This is the section that hold together the leaves and animation-->
+  <section>
+    <div class="destination">
+      <img src="images/welomepageedu.jfif" central park, height="600px" width="950">
+
+
+      <!--Calling the leaves-->
+      <div class="set">
+        <div><img src="images/leaves1.png"></div>
+        <div><img src="images/leaves2.png"></div>
+        <div><img src="images/leaves3.png"></div>
+        <div><img src="images/leaves4.png"></div>
+      </div>
+  </section>
+  <!--end of section-->
+  <!--This is the footer section-->
+  <footer>
+     <div class="ft-container">
+       <div class="isocials">
+    <!-- This is the instagram link to social media -->
+    <a href="https://instagram.com/fal_lingfall? 
+    igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr target=" _blank">
+      <img src="instagram.png" width="30" height="30"></a>
+
+      <!-- Credit: <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a> -->
+
+    <!-- This is the facebook link to social media -->
+    <a href="https://www.facebook.com/fallingforfall/" target="_blank"> <img src="facebook.png" width="30"
+        height="30"></a>
+    <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a> -->
+
+    <!-- This is the gmail link to social media -->
+    <a href="https://www.mail.gooogle.com/fallingforfall/" target="_blank"> <img src="email (2).png" width="30"
+        height="30">
+    </a>
+     <!-- Credit: <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by IconMark - Flaticon</a> -->
+
+    <a href="https://twitter.com/" _blank">
+        <img src="twitter.png" width="30" height="30"></a>
+    <!-- <a href="https://www.flaticon.com/free-icons/tweet" title="tweet icons">Tweet icons created by Freepik - Flaticon</a> -->
+       </div>
+
+       <div class="footernav">
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>  
+       </div>
+
+       <div class="copyright">
+    
+    <!--This is where the replit icon goes-->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" 
+     theme="dark" position="bottom-right"></script>
+    <p>&copy; 2023 fall season website. all rights reserved</p>
+       </div>
+       </div>
+    <!--This is the audio-->
+    <audio controls autoplay>
+      <source src="audio/autumn-sky-meditation-7618.mp3"</audio>
+
+  </footer>
+  <!--End of footer-->
+</body>
+  <!--End of body-->
+</html>

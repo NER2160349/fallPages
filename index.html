@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<!-- This is the hom page, makes it phone responsive-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+
+<!-- Connects it to the style sheet -->
+  <link href="style.css" rel="stylesheet" type="text/css" >
+
+<!-- Title and favicon for the webpage-->
+  <title>Falling-For-Fall</title>
+  <link rel="icon" type="image/x-icon" href="images/favicons (2).ico">
+
+<!-- Style section, creates elements of the layout and helps add effects, uses div element to apply a specific style, here it's used for image gallery. Container is used to create the page banner, creating block element for the text to go on top of  -->
+  <style>
+    body {
+        
+     opacity: 0.7;
+        background-color: #F2E1C3;
+    }
+
+    .container{
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+
+    .top-center{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      size: 20vw
+    }
+
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Javascript -->
+   <script src="script.js"></script>
+
+  <!-- This is the navigation bar/menu section -->
+  <div class="topnav">    
+    <a class="active" href="index.html">Home</a>
+    <a href="entertainment.html">Entertainment</a>
+    <a href="educational.html">Educational</a>
+    <a href="activities.html">Activities</a>
+    <a href="food.html">Food</a>
+    <a href="contactus.html">Contact Us</a>
+    </div>
+
+  <!--The banner of the website, with the title on top it. The banner is a gif and there is an container on top of it to have the text sit there-->
+      
+  <center><div class="container">
+    <img src="images/townfall.gif" style= "width:100%" height="700">
+    <div class="top-center"><h1>Falling for Fall</h1></div>
+  </div></center>
+    </section>
+
+  <!-- Introduction to the website -->
+   <hr> 
+  <center>
+    <h2> Why Fall?</h2>
+  
+    <h3>Fall is the best season of the year, with leaves in beautiful hues, crisp air, perfect weather and a pelthora of holidays, there is always something to enjoy during this mysterious and calming season. <br>Not falling for fall? This website provides a guide to through Fall! From books, history and places, you'll be able to get into the fall spirit in no time! 
+    </h3>
+  </center>
+
+
+  <!-- Image gallery of pictures in fall as described in the introduction-->
+ <div class="img-container"> 
+  <!--Image source: https://en.wikipedia.org/wiki/Autumn_leaf_color#/media/File:Momiji_%E7%B4%85%E8%91%89%E3%81%99%E3%82%8B%E3%83%A4%E3%83%9E%E3%83%A2%E3%83%9F%E3%82%B8_B221212.JPG -->
+      <img src="wiki.JPG" alt="Colorful Leaves" style="width:33%">
+
+<!-- Image Source: https://pixels.com/featured/crisp-morning-fall-michael-snyder.html -->
+      <img src="crispair.jpg" alt="Crisp Air" style="width:33%">
+
+<!--  Image Source: https://www.pinterest.com/pin/414823815657025432/-->
+      <img src="darkforest.png" alt="Dark Forest" style="width:33%">
+ </div>
+<!-- Fall facts -->
+
+  <br>
+  <left><h2>Did you know....</h2>
+    <p>The most fall months are October and November</p>
+    <p>Tis is the season of Sweater Weather and Pumpkin Spice</p>
+    <p>Napping is highly encouraged to get the full Autumn feel</p>
+    <p>Although many believe the season is meant for indoors, they are a variety of outdoor fall actiivtes</p>
+    <p>It's the perfect season to feel like you're in a coming-of-age indie film</p>
+  </left>
+
+  <br>
+  
+  <!-- Ghost Gif for fun  Source: https://splitlipthemag.com/memoir/0223/grace-dunbar-miller-->
+  <img src="ghosts.gif" style= "width:100%" height="400">
+
+  
+  
+     <!--calender, creating two tables next each other and they stack on top of each other for mobile screens-->
+  <title> fall calender</title>
+  <style>
+    .row{
+      margin-left:-5px;
+      margin-right:-5px;
+    }
+    .column{
+      float:left;
+      width:45%;
+      padding:5px;
+    }
+    .row::after{
+      content: "";
+      clear:both;
+      display:table;
+    }
+    
+    table {
+      border-collapse: collapse;
+      width: 250px;
+      margin: 20px auto;
+    }
+
+    th,
+    td {
+      border: .5px solid #000;
+      padding: 6px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #5D0401;
+      color: #fff;
+    }
+
+    tr:nth-child(even) {
+      background-color: E0A570;
+    }
+
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+       }
+      }
+
+    caption {
+      font-size: 30px;
+      margin: 10px;
+    }
+  </style>
+
+  <center><h3>Plan Your Fall!</h3></center>
+<!-- Calender for October 2023 with emojis to show holidays, table -->
+ <div class="row">
+   <div class = "column">
+  <table>
+    <caption>October 2023</caption>
+     <tr>
+       <th>Sun</th>
+       <th>Mon</th>
+       <th>Tue</th>
+       <th>Wed</th>
+       <th>Thu</th>
+       <th>Fri</th>
+       <th>Sat</th>
+     </tr>
+     <tr>
+       <td>1 &#127810	</td>
+       <td>2 &#127810	</td>
+       <td>3 &#127810	</td>
+       <td>4 &#127810	</td>
+       <td>5 &#127810	</td>
+       <td>6 &#127810	</td>
+       <td>7 &#127810	</td>
+     </tr>
+     <tr>
+       <td>8 &#127810	</td>
+       <td>9 &#127810	</td>
+       <td>10 &#127810	</td>
+       <td>11 &#127810	</td>
+       <td>12 &#127810	</td>
+       <td>13 &#127810	</td>
+       <td>14 &#127810	</td>
+     </tr>  
+     <tr>
+       <td>15 &#127810	</td>
+       <td>16 &#127810	</td>
+       <td>17 &#127810	</td>
+       <td>18 &#127810	</td>
+       <td>19 &#127810	</td>
+       <td>20 &#127810	</td>
+       <td>21 &#127810	</td>
+     </tr>
+     <tr>
+       <td>22 &#127810	</td>
+       <td>23 &#127810	</td>
+       <td>24 &#127810	</td>
+       <td>25 &#127810	</td>
+       <td>26 &#127810	</td>
+       <td>27 &#127810	</td>
+       <td>28 &#127810	</td>
+     </tr>
+     <tr>
+       <td>29 &#127810	</td>
+       <td>30 &#127810	</td>
+       <td>31 &#129503</td>
+       <td></td>
+       <td></td>
+       <td></td>
+       <td></td>
+     </tr>
+  </table>
+   </div>
+   <div class = "column">
+
+  <!-- Calender for November 2023 with emojis to show holidays, table -->
+  <table>
+    <caption>November 2023</caption>
+    <tr>
+      <th>Sun </th>
+      <th>Mon </th>
+      <th>Tue </th>
+      <th>Wed </th>
+      <th>Thu</th>
+      <th>Fri </th>
+      <th>Sat </th>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1 &#127810	</td>
+      <td>2 &#127810	</td>
+      <td>3 &#127810	</td>
+      <td>4 &#127810	</td>
+    </tr>
+    <tr>
+      <td>5 &#128337	</td>
+      <td>6 &#127810	</td>
+      <td>7 &#128238		</td>
+      <td>8 &#127810	</td>
+      <td>9 &#127810	</td>
+      <td>10 &#127810	</td>
+      <td>11 &#129686	</td>
+    </tr>
+    <tr>
+      <td>12 &#127810	</td>
+      <td>13 &#127810	</td>
+      <td>14 &#127810	</td>
+      <td>15 &#127810	</td>
+      <td>16 &#127810	</td>
+      <td>17 &#127810	</td>
+      <td>18 &#127810	</td>
+    </tr>
+    <tr>
+      <td>19 &#127810	</td>
+      <td>20 &#127810	</td>
+      <td>21 &#127810	</td>
+      <td>22 &#127810	</td>
+      <td>23 &#127831	</td>
+      <td>24 &#127810	</td>
+      <td>25 &#127810	</td>
+    </tr>
+    <tr>
+      <td>26 &#127810	</td>
+      <td>27 &#127810	</td>
+      <td>28 &#127810	</td>
+      <td>29 &#127810	</td>
+      <td>30 &#127810	</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+   </div>
+ </div>
+
+<!-- Calendar Key, shows what each emoji represents-->
+ <caption>Calendar Key: Perfect Fall Day = &#127810  Halloween = &#129503  Daylight Savings = &#128337 Election Day = &#128238  Veteran's Day = &#129686  Thanksgiving = &#127831</caption>
+
+<br> 
+   <footer>
+     <div class="ft-container">
+       <div class="isocials">
+    <!-- This is the instagram link to social media -->
+    <a href="https://instagram.com/fal_lingfall? 
+    igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr target=" _blank">
+      <img src="instagram.png" width="30" height="30"></a>
+
+      <!-- Credit: <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a> -->
+
+    <!-- This is the facebook link to social media -->
+    <a href="https://www.facebook.com/fallingforfall/" target="_blank"> <img src="facebook.png" width="30"
+        height="30"></a>
+    <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a> -->
+
+    <!-- This is the gmail link to social media -->
+    <a href="https://www.mail.gooogle.com/fallingforfall/" target="_blank"> <img src="email (2).png" width="30"
+        height="30">
+    </a>
+     <!-- Credit: <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by IconMark - Flaticon</a> -->
+
+    <a href="https://twitter.com/" _blank">
+        <img src="twitter.png" width="30" height="30"></a>
+    <!-- <a href="https://www.flaticon.com/free-icons/tweet" title="tweet icons">Tweet icons created by Freepik - Flaticon</a> -->
+       </div>
+
+       <div class="footernav">
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>  
+       </div>
+
+       <div class="copyright">
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+
+    <!--This is where the replit icon goes-->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" 
+     theme="dark" position="bottom-right"></script>
+    <p>&copy; 2023 fall season website. all rights reserved</p>
+       </div>
+       </div>
+  </footer>
+  <!--End of body-->
+</body>
+</html>

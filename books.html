@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+
+<!-- The Beginning of the page, title, icon, etc -->
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Books</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicons (2).ico">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="stylebooks.css" rel="stylesheet" type="text/css" />
+
+<!-- Classes to create image hover effect -->
+  <style>
+    body {
+      background-color: #F2E1C3;
+      opacity: 0.7;
+    }
+    .container {
+      position: relative;
+      width: 50%;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgb(170, 42, 44);
+    }
+
+    .container:hover.overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    .center {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (max-width: 600px) {
+    audio {
+      width: 100%;
+      margin-top: 5px;
+    }
+      
+  </style>
+
+</head>
+
+<!-- The top of the page -->
+<body>
+  <script src="script.js"></script>
+  <div class="topnav">
+    <a class="active" href="index.html">Home</a>
+    <a href=entertainment.html> Entertainment </a>
+    <a href="music.html">Music</a>
+    <a href="moviesandtv.html">Movies and TV Shows</a>
+    <a href="contactus.html">Contact Us</a>
+  </div>
+  <center>
+
+    <h2>Fall Books </h2>
+    <p><b> Books to read on a chilly Fall day <br> Mystery, romance, horror and more! <br> Enjoyed best with a cup of
+        tea :) </b> </p>
+  </center>
+  
+<center>
+  
+<!--  First table of books, 4 books appear as row, hover over each image to know about them and click on the genre to go to a link--> 
+  <h3>Feeling Witchy? Kinda Spooky???? Learn how to caste a spell with these fantasy books </h3>
+  
+   <table>
+     <tr>
+       <td><div class ="container">
+       <img src="images/allofusvillians.jpg" alt="All of Us Villians" class="image">
+       <div class="overlay">
+         <center>
+         <div class="text">Hunger Games + Harry Potter<br><a href="https://www.goodreads.com/book/show/56179338-all-of-us-villains?ref=nav_sb_ss_1_18" title="Book">Young Adult</a></div>
+         </center>
+       </div> 
+      </div></td>
+       
+       <td><div class ="container">
+       <img src="images/immortalists.jpg" alt="The Immortalists" class="image">
+       <div class="overlay"> 
+         <center>
+         <div class="text"> Know how the story ends before it begins<br><a href="https://www.goodreads.com/book/show/30288282-the-immortalists?ref=nav_sb_ss_3_11" title="Book">Historical Fiction</a></div>
+         </center>
+        </div>
+       </div></td>
+       
+    <td><div class="container">
+      <img src="images/togetherwerot.jpg" alt="Together We Rot" class="image" width="100" height="250">
+      <div class="overlay">
+      <center>
+        <div class="text"> A girl trying to find her mom while a guy runs away from his cult-family<br><a href="https://www.goodreads.com/book/show/63933651-together-we-rot?ref=nav_sb_ss_1_15" title="Book">Young Adult/Gothic</a></div>
+      </center>
+
+      </div> 
+    </td>
+
+    <td><div class="container">
+      <img src="images/thenightcircus.jpg" alt="The Night Circus" class="image">
+      <div class="overlay">
+        <center>
+        <div class="text">A duel between two young magicians<br><a href="https://www.goodreads.com/book/show/9361589-the-night-circus?ref=nav_sb_ss_2_11" title="Book">Magic/Fiction</a></div>
+      </center>
+     </div></td> 
+    </tr>
+   </table>
+
+<!-- Row of Romance Novels, hover over each image to know more about them-->
+  <h3>Kicking & Giggling Romance Books that will fill your lonely life</h3>
+  <table>
+    <tr>
+      <td><div class="container">
+          <img src="images/attv3.png" alt="Assiastant to the Villian" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">Once Upon a Time <br> meets <br>The Office<br><a href="https://www.goodreads.com/book/show/123257687-assistant-to-the-villain?ref=nav_sb_ss_2_5" title="Book">Fantasy/Magic</a></div>
+            </center>
+          </div>
+        </div></td>
+
+      <td><div class="container">
+        <img src="images/thehexex.jpg" alt="The Ex Hex" class="image">
+        <div class="overlay">
+        <center>
+          <div class="text"> A curse on an ex goes horribly wrong <br><a href="https://www.goodreads.com/book/show/56554626-the-ex-hex?ref=nav_sb_ss_1_10" title="Book">Wicthes/Magic</a></div>
+        </center>
+        </div>
+      </div></td>
+
+      <td><div class="container">
+          <img src="images/deadromantics.jpg" alt="The Dead Romantics" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">A girl who sees ghosts goes back to her hometown for her father's funeral, what can go wrong? <br><a href="https://www.goodreads.com/book/show/58885776-the-dead-romantics?ref=nav_sb_ss_1_10" title="Book">Contemporary</a></div>
+            </center>
+          </div>
+        </div></td>
+
+      <td><div class="container">
+          <img src="images/allrhodesleadhere.jpg" alt="All Rhoder Lead Here" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">Small town romance in a perfect fall setting<br><a href="https://www.goodreads.com/book/show/57605091-all-rhodes-lead-here?ref=nav_sb_ss_1_11" title="Book">Contemporary</a></div>
+            </center>
+          </div>
+        </div></td>
+    </tr>
+  </table>
+
+<!-- Row of Books for Y/A, hover over the image to know more about them -->
+  <h3>Want to go back to high school? Probably not, but these books will make you feel young</h3>
+  <table class="center">
+    <tr>
+      <td><div class ="container">
+        <img src="images/theatlassix.jpg" alt="The Atlas Six" class="image">
+        <div class="overlay">
+          <center>
+          <div class="text">Six talented magicians are invited to join an elite society <br><a href="https://www.goodreads.com/book/show/50520939-the-atlas-six?from_search=true&from_srp=true&qid=Ytw7WopZuM&rank=1" title="Book">Dark Academia</a></div>
+          </center>
+        </div>
+      </div></td>
+      
+    <td><div class="container">
+      <img src="images/ifwewerevillians.jpg" alt="If We Were Villians" class="image">
+      <div class="overlay">
+        <center>
+        <div class="text">Narrator is released from jail for a murder he may or may not have committed <br><a href="https://www.goodreads.com/book/show/30319086-if-we-were-villains?ref=nav_sb_ss_1_14" title="Book">Dark Academia</a></div>
+        </center>
+      </div>
+    </div></td>
+
+    <td><div class="container">
+      <img src="images/theravenboys.jpg" alt="The Raven Boys" class="image">
+      <div class="overlay">
+        <center>
+        <div class="text">A lonely girl befriends privileged boys<br><a href="https://www.goodreads.com/book/show/17675462-the-raven-boys?ref=nav_sb_noss_l_6" title="Book">Supernatural/Angst</a></div>
+        </center>
+      </div>
+    </div></td>
+
+    <td><div class="container">
+      <img src="images/theperksofbeingawallflower.jpg" alt="The Perks of Being a Wallflower" class="image">
+      <div class="overlay">
+        <center>
+        <div class="text">Charlie is caugth between living his life and trying to run from it<br><a href="https://www.goodreads.com/book/show/22628.The_Perks_of_Being_a_Wallflower?ref=nav_sb_ss_1_13" title="Book">Coming of Age</a></div>
+        </center>
+      </div>
+    </div></td>
+   </tr>
+  </table>
+
+  <!-- Row of Books about Mystery/Thriller Books, hover over the image to know more about them -->
+  <h3>Hair gripping, page turning, stay-up-all-night-reading mystery/thriller books. You can't guess what happens next </h3>
+  <table>
+    <tr>
+      <td><div class="container">
+          <img src="images/thehelmofmidnight.jpg" alt="The Helm of Midnight" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">A legendary serial killer's spirit still haunts a city long after his death<br><a href="https://www.goodreads.com/book/show/53205864-the-helm-of-midnight?ref=nav_sb_ss_1_9" title="Book">Adult/Fantasy</a></div>
+            </center>
+          </div>
+        </div></td>
+      
+      <td><div class="container">
+        <img src="images/theyneverlearn.jpg" alt="They Never Learn" class="image">
+        <div class="overlay">
+          <center>
+          <div class="text">Two women give terrible men what they deserve<br><a href="https://www.goodreads.com/book/show/124948406-they-never-learn?ref=nav_sb_ss_1_10" title="Book">Adult Fiction</a></div>
+          </center>
+        </div>
+      </div></td>
+      
+      <td><div class="container">
+          <img src="images/verity.jpg" alt="Verity" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">You won't know who to root for<br><a href="https://www.goodreads.com/book/show/59344312-verity?ref=nav_sb_ss_1_6" title="Book">Suspense/ Contemporary</a></div>
+            </center>
+          </div>
+        </div></td>
+      
+      <td><div class="container">
+          <img src="images/theinheritancegames.jpg" alt="The Inheritancegames" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">A teenage girl is left a billionaire's fortune after he dies, but she doesn't even know him<br><a href="https://www.goodreads.com/book/show/52439531-the-inheritance-games?ref=nav_sb_ss_2_9" title="Book">Young Adult/Contemporary</a></div>
+            </center>
+          </div>
+        </div></td>
+    </tr>
+  </table>
+
+  
+<!-- Row of Horror Books, hover over to get a link and genres -->
+  <h3>Want to question humanity? Stay up all night scared? These horror books will do the trick </h3>
+  <table>
+    <tr>
+      <td><div class="container">
+          <img src="images/ringshout.jpg" alt="Ring Shout" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">In America, demons wear white hoods<br><a href="https://www.goodreads.com/en/book/show/49247242" title="Ring Shout">Historical Fiction</a></div>
+           </center>
+          </div>
+        </div></td>
+
+      <td><div class="container">
+        <img src="images/tenderistheflash.jpg" alt="Tender Is The Flesh" class="image">
+        <div class="overlay">
+          <center>
+          <div class="text">In world where cannibalism is legal, Marcos is a meat supplier<br><a href="https://www.goodreads.com/book/show/49090884-tender-is-the-flesh?ref=nav_sb_ss_1_7" title="Book">Dystopia</a></div>
+          </center>
+        </div>
+      </div></td>
+
+      <td><div class="container">
+          <img src="images/darkharvest.jpg" alt="Dark harvest" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">Every year in a midwestern town, young boys are chosen to kill a creature <br><a href="https://www.goodreads.com/book/show/1201724.Dark_Harvest?ref=nav_sb_ss_1_9" title="Book">Halloween</a></div>
+            </center>
+          </div>
+        </div></td>
+
+      <td><div class="container">
+          <img src="images/between.jpg" alt="The Between" class="image">
+          <div class="overlay">
+            <center>
+            <div class="text">A man constantly on the verge of a breakdown<br><a href="https://www.goodreads.com/book/show/41534.The_Between?ref=nav_sb_ss_1_16" title="Book">Science Fiction</a></div>
+           </center>
+          </div>
+        </div></td>
+   </tr>
+   </table>
+  
+  </center>
+  
+
+  <footer>
+     <div class="ft-container">
+       <div class="isocials">
+    <!-- This is the instagram link to social media -->
+    <a href="https://instagram.com/fal_lingfall? 
+    igshid=MzMyNGUyNmU2YQ%3D%3D&utm_source=qr target=" _blank">
+      <img src="instagram.png" width="30" height="30"></a>
+
+      <!-- Credit: <a href="https://www.flaticon.com/free-icons/instagram" title="instagram icons">Instagram icons created by Freepik - Flaticon</a> -->
+
+    <!-- This is the facebook link to social media -->
+    <a href="https://www.facebook.com/fallingforfall/" target="_blank"> <img src="facebook.png" width="30"
+        height="30"></a>
+    <!-- <a href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a> -->
+
+    <!-- This is the gmail link to social media -->
+    <a href="https://www.mail.gooogle.com/fallingforfall/" target="_blank"> <img src="email (2).png" width="30"
+        height="30">
+    </a>
+     <!-- Credit: <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icons created by IconMark - Flaticon</a> -->
+
+    <a href="https://twitter.com/" _blank">
+        <img src="twitter.png" width="30" height="30"></a>
+    <!-- <a href="https://www.flaticon.com/free-icons/tweet" title="tweet icons">Tweet icons created by Freepik - Flaticon</a> -->
+       </div>
+
+       <div class="footernav">
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>  
+       </div>
+
+       <div class="copyright">
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+
+
+    <!--This is where the replit icon goes-->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" 
+     theme="dark" position="bottom-right"></script>
+    <p>&copy; 2023 fall season website. all rights reserved</p>
+       </div>
+       </div>
+  </footer>
+<!--End of body-->
+</body>
+</html>
